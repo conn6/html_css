@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg,#ffce51, #ff7253, #fd5754);
+}
+
+#form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(253, 236, 219);
+    border-radius: 10px;
+    padding: 50px;
+    width: min-content; /*a largura se adequa ao conteudo, essa é a largura da div form*/
+    align-items: center;
+    color: rgb(51, 51, 51);
+    animation: iniciar 1.6s ease-out;
+    pointer-events: all;
+}
+
+.title {
+    font-size: 1.8em;
+    margin-bottom: 10%; /*margem abaixo do titulo*/
+}
+
+.input {
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px #6f7e8a solid; /*pesquisar os tipos de borda, tipo solid, dashed...*/
+    padding: 5px;
+    margin: 0px 0px 12px -5px;/*ordem: cima, direita, baixo, esquerda--tipo horario*/
+}
+
+.input i {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.input input {
+    width: 80%;
+    border: none;/*tirar borda do input*/
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(-10%);
+    background-color: rgb(253, 236, 219);
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+}
+
+#btn {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.input-file {
+    font-family: 'Poppins', sans-serif;
+}
+
+#btn button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    background: linear-gradient(-45deg,#ffce51, #ff7253, #fd5754);
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(253, 236, 219);
+    outline: none;/*contorno*/ /* largura | estilo | cor */ /*outline: 1px solid white;*/
+    cursor: pointer; /*cursor mão*/
+}
+
+#btn button:hover {
+    color: rgb(51, 51, 51);
+    background: linear-gradient(-45deg,#ffce519f, #ff7253a2, #fd575493);
+}
+
+@keyframes iniciar {
+    0%{
+        top: -20%;
+        opacity: 0;
+        pointer-events: none;
+    }
+    100%{
+        top: 50%;
+        opacity: 100%;
+        pointer-events: all;
+    }
+}

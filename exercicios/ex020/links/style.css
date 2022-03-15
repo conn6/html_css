@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@font-face {
+    font-family: Lyons;
+    src: url('fonts/538Lyons.ttf') format('truetype');
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Lyons', sans-serif;
+    font-weight: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited { /*pseudo-classe visitado*/
+    color: #4f027c;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #7D560F;
+}
+
+a:active { /*link ativo é quando está sendo clicado*/
+    color: #0EC966;
+}
+
+.especial::before {
+    content: '➪';
+}
+ul {
+    list-style: none;
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+div > p {
+    display: none;
+} /*para esconder o paragrafo dentro da div.*/
+
+div:hover > p {
+    display: block;
+    color: blanchedalmond;
+    background-color: brown;
+    width: 200px;
+}
+
+div:hover{
+    color: rgb(136, 6, 175);
+}

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(143, 147, 151);
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+nav {
+    display: inline;
+    background-color: rgb(172, 94, 94);
+    padding: 3px;
+    box-shadow: 1px 1px 5px rgba(54, 3, 3, 0.562); /*hor vert espalhamento cor*/
+}
+
+nav > a{
+    color: rgb(43, 42, 42);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+nav > a:hover {
+    color: rgb(80, 7, 148);
+}
+
+main {
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 1px 1px 5px rgba(54, 3, 3, 0.562); /*hor vert espalhamento cor*/
+}
+
+article > aside {
+    background-color: rgb(29, 31, 32);
+    color: aliceblue;
+    padding: 3px;
+    margin: 0px;
+}
+
+aside > p {
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    padding: 2px;
+    margin: 0px;
+}
+
+footer > p {
+    margin: 0px; /*para cancelar a margem padrão do paragrafo e usar o padding colocado no footer*/
+}
+
+#bola {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(247, 212, 160);
+    margin: 20px auto;
+    border-radius: 50%;
+}

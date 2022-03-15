@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    background-image: linear-gradient(-45deg #302728,#9E5949,#A6A18E);
+}
+body {
+    background-color: #A6A18E;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    color: #302728;
+}
+
+#principal {
+    color: #A6A18E;
+    text-align: center;
+}
+
+h2 {
+    color: #9E5949;
+}
+
+.basico {
+    color: #BB7B6A;
+}
+
+.intermediario {
+    color: #8E5244;
+}
+
+.avancado {
+    color: #5C3B35;
+}
+
+.destaque {
+    background-color: brown;
+}
